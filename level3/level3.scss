@@ -1,0 +1,38 @@
+*{
+  font-family: Consolas, courier;
+  text-align: center;
+}
+
+.title{
+  font-size: 20px;
+}
+
+#chart {
+  .edges line {
+    stroke: #999;
+    stroke-opacity: 0.6;
+  }
+  .nodes circle {
+    stroke: #fff;
+    stroke-width: 1.5px;
+  }
+}
+
+#matrix{
+  font-size: 10px;
+  .background{
+    fill:#eeeeee;
+  }
+  .matrixLine {
+    stroke: #fff;
+  }
+  text.active{
+    fill: #aaaaaa;
+  }
+  .cell {
+    &.active{
+    stroke-width: 3px;
+      stroke: black;
+    }
+  }
+}

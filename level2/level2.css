@@ -1,0 +1,33 @@
+#chart {
+  font-family: Consolas, courier;
+  width: 100%;
+  height: 100%; }
+
+.label {
+  font-size: 12px; }
+
+.line {
+  fill: none;
+  stroke-width: 2px; }
+  .line.min {
+    stroke: #FFFF00; }
+  .line.max {
+    stroke: #990033; }
+
+.rect {
+  position: fixed; }
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 160px;
+  padding: 2px;
+  font-size: 11px;
+  font-family: Consolas, courier;
+  background: white; }
+
+text.mono {
+  font-size: 12px;
+  fill: #aaa; }
+
+/*# sourceMappingURL=level2.css.map */

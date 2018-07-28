@@ -1,0 +1,26 @@
+* {
+  font-family: Consolas, courier; }
+
+#chart {
+  font-size: 18px; }
+
+#category {
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  padding: 3px; }
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 160px;
+  padding: 2px;
+  font-size: 11px;
+  background: white; }
+
+text.mono {
+  font-size: 12px;
+  fill: #aaa; }
+
+/*# sourceMappingURL=level1.css.map */
