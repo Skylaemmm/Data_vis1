@@ -180,7 +180,6 @@ d3.json("HKUST_coauthor_graph.json", (error, graph) => {
 
 //when hover the cell, the text will become grey
     function mouseover(p) {
-        console.log(p)
         d3.selectAll(".row text").classed("active", function(d, i) { return i == p.y; });
         d3.selectAll(".column text").classed("active", function(d, i) { return i == p.x; });
     }

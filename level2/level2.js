@@ -159,7 +159,7 @@ d3.csv("../temperature_daily_new.csv",(error,data)=> {
         .style("fill", (d, i) => colors[i] );
 
     legend.append("text")
-        .attr("class", "mono")
+        .attr("class", "labels")
         .text((d) => Math.round(d) )
         .attr("x", 1100 + legendElementWidth )
         .attr("y",  (d, i) => legendElementWidth * i + margin.top)

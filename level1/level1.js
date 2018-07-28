@@ -25,7 +25,7 @@ svg.selectAll(".yearLabel")
     .attr("y", (d, i)=> i * gridStep )
     .style("text-anchor", "end")
     .attr("transform", "translate(-6," + gridSize / 1.5 + ")")
-    .attr("class", "yearLabel mono");
+    .attr("class", "yearLabel labels");
 
 //set month(x) label
 svg.selectAll(".monthLabel")
@@ -36,7 +36,7 @@ svg.selectAll(".monthLabel")
     .attr("y", 0)
     .style("text-anchor", "middle")
     .attr("transform", "translate(" + gridSize / 2 + ", -6)")
-    .attr("class", "monthLabel mono");
+    .attr("class", "monthLabel labels");
 
 //add tooltips
 var div = d3.select("body").append("div")
@@ -105,7 +105,7 @@ d3.csv("../temperature_monthly.csv", (error, data) =>{
                 .style("fill", (d, i) => colors[i] );
 
             legend.append("text")
-                .attr("class", "mono")
+                .attr("class", "labels")
                 .text((d) => Math.round(d) )
                 .attr("x", (d, i) =>  (legendElementWidth * i) )
                 .attr("y", height + margin.top + gridSize);
